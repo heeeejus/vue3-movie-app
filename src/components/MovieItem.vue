@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .movie { 
-  $width: 168px;
+  $width: 200px;
   width: $width;
   height: $width * 3 / 2;
   margin: 10px;

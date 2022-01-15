@@ -65,7 +65,6 @@ export default {
       return path.test(this.$route.fullPath)
     },
     toAbout() {
-      console.log('!!!')
       this.$router.push('/about')
     }
   }

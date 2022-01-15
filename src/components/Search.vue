@@ -90,7 +90,6 @@ export default {
     }
   }
   .selects {
-    margin-right: 10px;
     display: flex;
     select {
       width: 120px;

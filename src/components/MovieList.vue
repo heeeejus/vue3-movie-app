@@ -35,7 +35,7 @@ export default {
     ...mapState('movie', [
       'movies',
       'message',
-      'loadgin'
+      'loading'
     ])
   }
 }
