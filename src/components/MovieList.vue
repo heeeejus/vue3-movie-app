@@ -3,9 +3,7 @@
     <div
       :class="{ 'no-result': !movies.length }"
       class="inner">
-      <div
-        v-if="loading"
-        class="spinner-border text-primary"></div>
+      <Loader v-if="loading" />
       <div
         v-if="message"
         class="message">
@@ -24,29 +22,26 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
 import MovieItem from '~/components/MovieItem'
+import Loader from '~/components/Loader'
 
 export default {
   components: {
-    MovieItem
+    MovieItem,
+    Loader
   },
   computed: {
-    movies() {
-      return this.$store.state.movie.movies
-    },
-    message() {
-      return this.$store.state.movie.message
-    },
-    loading() {
-      return this.$store.state.movie.loading
-    }
+    ...mapState('movie', [
+      'movies',
+      'message',
+      'loadgin'
+    ])
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "~/scss/main";
-
 .container {
   margin-top: 30px;
   .inner {

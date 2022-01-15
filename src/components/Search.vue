@@ -106,5 +106,22 @@ export default {
     font-weight: 700;
     flex-shrink: 0; //flex에서 너비가 줄어드는것 방지
   }
+  @include media-breakpoint-down(lg) { //부트스르랩 반응형
+    display: block; //lg사이즈보다 작으면 수평에서 수직으로 쌓이도록
+    input {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .selects {
+      margin-right: 0;
+      margin-bottom: 10px;
+      select {
+        width: 100%;
+      }
+    }
+    .btn {
+      width: 100%;
+    }
+  }
 }
 </style>

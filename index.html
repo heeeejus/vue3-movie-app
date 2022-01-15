@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Webpack project!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Vue3 Movie app</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Vue3 Movie App" />
+  <meta property="og:title" content="Vue3 Movie App" />
+  <meta property="og:description" content="The OMDb API is a RESTful web service to obtain movie information, all content and images on the site are contributed and maintained by our users." />
+  <meta property="og:image" content="https://heropy.blog/css/images/logo.png" />
+  <meta property="og:url" content="https://stupefied-hodgkin-d9d350.netlify.app" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
+    /* bootstrap root 적용으로 인해 폰트가 제대로 안먹음.
+       해결방법 : main.scss를 통해 폰트 패밀리 재설정 */
     body {
       line-height: 1.4;
-      font-family: "Roboto", sans-serif;
+      font-family: 'Roboto', sans-serif; 
     }
   </style>
 </head>

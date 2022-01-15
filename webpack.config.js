@@ -46,7 +46,12 @@ module.exports = {
           'style-loader',
           'css-loader',
           'postcss-loader',
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: { //style에 매번 쓸필요가 없어짐
+              additionalData: '@import "~/scss/main";'
+            }
+          }
         ]
       },
       {
