@@ -1,5 +1,6 @@
 // Default variable overrides
 $primary: #FDC000;
+
 $container-max-widths: (
   sm: 540px,
   md: 704px,
@@ -7,10 +8,12 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1364px
 );
+
 $font-family-sans-serif : 'Roboto' , sans-serif ; //html에서 css작성시 root와 충돌로 인해 html style 태그에 있는 글씨체 적용이 되지 않음 해결!!!
 // Required
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
